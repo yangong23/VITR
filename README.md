@@ -56,36 +56,46 @@ ViT-B/16 or ViT-L/14
 ```
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --model ViT-B/16 or ViT-L/14
 ```
+
+Please notice: 
+
+$DATA_PATH is: path/datasets
+
+$DATASET_NAME is: RefCOCOg, CLEVR, or F30K
+
 ### Evaluate CLIP, and extract data features for the use of CLIP-RR
 
 RN101 is required, please use one of ViT-B/16 and ViT-L/14.
 
 RN101
 ```
-python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME --model RN101
+python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATASET_NAME --model RN101
 ```
 ```
-python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME --model RN101
+python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATASET_NAME --model RN101
 ```
 ViT-B/16 or ViT-L/14
 ```
-python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
+python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATASET_NAME --model ViT-B/16 or ViT-L/14
 ```
 ```
-python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
+python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATASET_NAME --model ViT-B/16 or ViT-L/14
 ```
+Once finised, please go to the folder 'CLIP/features', and copy all files into datasets/$DATASET_NAME/precomp
+
 ## CLIP-RR
 
 ### Train
 
 B16
 ```
-python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --embed_size 1024
+python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/log --model_name runs/model --embed_size 1024
 ```
 L14
 ```
-python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --embed_size 2048
+python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/log --model_name runs/model --embed_size 2048
 ```
+
 ### Evaluation
 
 B16 or L14
