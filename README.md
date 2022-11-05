@@ -63,7 +63,7 @@ $DATA_PATH is: path/datasets
 
 $DATASET_NAME is: RefCOCOg, CLEVR, or F30K
 
-### Evaluate CLIP, and extract precomp features for the use of CLIP-RR
+### Evaluate CLIP, and extract the precomp features for the use of CLIP-RR
 
 RN101 is required, please use one of ViT-B/16 and ViT-L/14.
 
