@@ -38,7 +38,7 @@ python3 setup.py install
 ## Datasets
 ### 1 Please download images:
 
-RefCOCOg images are from [here](https://cocodataset.org/#download) (2014 MS-COCO images), or
+RefCOCOg images (2014 MS-COCO images) are from [here](https://cocodataset.org/#download) or
 ```
 wget -c http://images.cocodataset.org/zips/train2014.zip
 wget -c http://images.cocodataset.org/zips/val2014.zip
