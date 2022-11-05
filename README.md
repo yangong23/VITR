@@ -42,6 +42,7 @@ F30K: datasets/RefCOCOg/precomp/images
 
 ### 1 install
 cd CLIP
+
 python3 setup.py install
 
 ### 2 train
