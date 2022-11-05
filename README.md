@@ -28,4 +28,4 @@ nltk.download()
 ``` 
 
 ## Download data
-Download Flikr30K images from [here]([https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset])
+Download Flikr30K images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)
