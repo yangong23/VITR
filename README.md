@@ -28,4 +28,4 @@ nltk.download()
 ``` 
 
 ## Datasets
-Please download RefCOCOg images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset) (Same images as MS-COCO), CLEVR images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset), and Flikr30K images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset).
+Please download RefCOCOg images from [here](https://cocodataset.org/#download) (2014 Train images), CLEVR images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset), and Flikr30K images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset).
