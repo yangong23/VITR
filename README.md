@@ -29,6 +29,12 @@ nltk.download()
 > d punkt
 ``` 
 
+* install CLIP
+``` 
+cd CLIP
+python3 setup.py install
+```
+
 ## Datasets
 Please download RefCOCOg images from [here](https://cocodataset.org/#download) (2014 MS-COCO images), CLEVR v1.0 images from [here](https://cs.stanford.edu/people/jcjohns/clevr/), and Flikr30K images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset), then copy images to follows.
 
@@ -40,12 +46,7 @@ F30K: datasets/RefCOCOg/precomp/images
 
 ## CLIP
 
-### 1 install
-cd CLIP
-
-python3 setup.py install
-
-### 2 train
+### Train
 
 RN101
 ```
@@ -55,7 +56,7 @@ ViT-B/16 or ViT-L/14
 ```
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --model ViT-B/16 or ViT-L/14
 ```
-### 3 evaluate CLIP, and extract data features for the use of CLIP-RR
+### Evaluate CLIP, and extract data features for the use of CLIP-RR
 
 RN101 is required, please use one of ViT-B/16 and ViT-L/14.
 
@@ -75,7 +76,7 @@ python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME --mod
 ```
 ## CLIP-RR
 
-### 1 train
+### Train
 
 B16
 ```
@@ -85,7 +86,7 @@ L14
 ```
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --embed_size 2048
 ```
-### 2 evaluation
+### Evaluation
 
 B16 or L14
 ```
