@@ -1,5 +1,5 @@
 # CLIP-RR
-The Implementation of CLIP-RR
+The Implementation of CLIP-RR.
 
 ## Requirements and installation
 We recommended the following dependencies.
