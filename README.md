@@ -50,11 +50,11 @@ F30K: path/datasets/RefCOCOg/precomp/images
 
 RN101
 ```
-python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --model RN101
+python train.py --data_path $DATA_PATH --dataset $DATA_NAME --model RN101
 ```
 ViT-B/16 or ViT-L/14
 ```
-python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --model ViT-B/16 or ViT-L/14
+python train.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
 ```
 
 Please notice: 
@@ -89,11 +89,11 @@ Once finised, please go to the folder 'CLIP/features', and copy all files into d
 
 B16
 ```
-python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/log --model_name runs/model --embed_size 1024
+python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --embed_size 1024
 ```
 L14
 ```
-python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/log --model_name runs/model --embed_size 2048
+python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --embed_size 2048
 ```
 
 ### Evaluation
