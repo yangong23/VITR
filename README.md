@@ -39,51 +39,55 @@ CLEVR: datasets/CLEVR/precomp/images/train, val, and test
 F30K: datasets/RefCOCOg/precomp/images
 
 ## CLIP
-### install
+
+### 1 install
 cd CLIP
 python3 setup.py install
 
-### train
+### 2 train
 
-#### RN101
-
+RN101
+```
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --model RN101
-
-#### ViT-B/16 or ViT-L/14
-
+```
+ViT-B/16 or ViT-L/14
+```
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --model ViT-B/16 or ViT-L/14
+```
+### 3 evaluate CLIP, and extract data features for the use of CLIP-RR
 
-### evaluate CLIP, and extract data features for the use of CLIP-RR
-
-#### RN101
-
+RN101
+```
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME --model RN101
-
+```
+```
 python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME --model RN101
-
-#### ViT-B/16 or ViT-L/14
-
+```
+ViT-B/16 or ViT-L/14
+```
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
-
+```
+```
 python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
-
+```
 ## CLIP-RR
-### train
 
-#### B16
+### 1 train
 
+B16
+```
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --embed_size 1024
-
-#### L14
-
+```
+L14
+```
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --embed_size 2048
+```
+### 2 evaluation
 
-### evaluation
-
-#### B16 or L14
-
+B16 or L14
+```
 evaluation.evalrank("$RUN_PATH/model_best.pth.tar", data_path="$DATA_PATH", split="test")
-
+```
 
 
 
