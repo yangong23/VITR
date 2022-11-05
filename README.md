@@ -71,9 +71,9 @@ python train.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or 
 
 Please notice: 
 
-$DATA_PATH is: path/datasets
+$DATA_PATH is: $PATH/datasets
 
-$DATASET_NAME is: RefCOCOg, CLEVR, or F30K
+$DATASET_NAME is: one of RefCOCOg, CLEVR, and F30K
 
 ### Evaluate CLIP, and extract the precomp features for the use of CLIP-RR
 
