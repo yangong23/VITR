@@ -48,13 +48,13 @@ CLEVR v1.0 images are from [here](https://cs.stanford.edu/people/jcjohns/clevr/)
 
 Flikr30K images are from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)
 
-### 2 Please copy the downloaded images to following paths.
+### 2 Please copy the downloaded images to the following paths.
 
-RefCOCOg: path/datasets/RefCOCOg/precomp/images/train2014 and val2014
+RefCOCOg: $PATH/datasets/RefCOCOg/precomp/images/train2014 and val2014
 
-CLEVR: path/datasets/CLEVR/precomp/images/train, val, and test
+CLEVR: $PATH/datasets/CLEVR/precomp/images/train, val, and test
 
-F30K: path/datasets/RefCOCOg/precomp/images
+F30K: $PATH/datasets/RefCOCOg/precomp/images
 
 ## CLIP
 
