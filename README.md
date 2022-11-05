@@ -57,6 +57,8 @@ python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/l
 ```
 ### 3 evaluate CLIP, and extract data features for the use of CLIP-RR
 
+RN101 is required, please use one of ViT-B/16 and ViT-L/14.
+
 RN101
 ```
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME --model RN101
@@ -89,21 +91,3 @@ B16 or L14
 ```
 evaluation.evalrank("$RUN_PATH/model_best.pth.tar", data_path="$DATA_PATH", split="test")
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
