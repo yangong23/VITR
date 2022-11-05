@@ -83,9 +83,7 @@ RN101
 ```
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATASET_NAME --model RN101
 ```
-```
-python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATASET_NAME --model RN101
-```
+
 ViT-B/16 or ViT-L/14
 ```
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATASET_NAME --model ViT-B/16 or ViT-L/14
