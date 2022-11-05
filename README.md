@@ -19,6 +19,8 @@ We recommended the following dependencies.
 
 * [pycocotools](https://github.com/cocodataset/cocoapi) 
 
+* pip install ftfy regex tqdm
+
 * Punkt Sentence Tokenizer:
 
 ``` python
@@ -26,6 +28,8 @@ import nltk
 nltk.download()
 > d punkt
 ``` 
+cd CLIP
+python3 setup.py install
 
 ## Datasets
 Please download RefCOCOg images from [here](https://cocodataset.org/#download) (2014 MS-COCO images), CLEVR v1.0 images from [here](https://cs.stanford.edu/people/jcjohns/clevr/), and Flikr30K images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset).
