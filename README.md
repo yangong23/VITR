@@ -112,5 +112,5 @@ python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name run
 
 B16 or L14
 ```
-evaluation.evalrank("$RUN_PATH/model_best.pth.tar", data_path="$DATA_PATH", split="test")
+evaluation.evalrank("./runs/$DATASET_NAME/model/model_best.pth.tar", data_path="$DATA_PATH", split="test")
 ```
