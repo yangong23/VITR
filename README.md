@@ -101,11 +101,11 @@ Once finised, please go to the folder 'CLIP/features', and copy all files into d
 
 B16
 ```
-python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --embed_size 1024
+python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --bert_size 512 --embed_size 1024
 ```
 L14
 ```
-python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --embed_size 2048
+python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --bert_size 768 --embed_size 2048
 ```
 
 ### Evaluation
