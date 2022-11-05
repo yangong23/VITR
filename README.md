@@ -38,12 +38,12 @@ CLEVR: datasets/CLEVR/precomp/images/train, val, and test
 
 F30K: datasets/RefCOCOg/precomp/images
 
-## Requirements and installation
-### install CLIP
+## CLIP
+### install
 cd CLIP
 python3 setup.py install
 
-### train CLIP
+### train
 
 #### RN101
 
@@ -66,6 +66,24 @@ python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME --mod
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
 
 python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
+
+## CLIP-RR
+### train
+
+#### B16
+
+python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --embed_size 1024
+
+#### L14
+
+python train.py --data_path $DATA_PATH --dataset $DATA_NAME --logger_name runs/log --model_name runs/model --embed_size 2048
+
+### evaluation
+
+#### B16 or L14
+
+evaluation.evalrank("$RUN_PATH/model_best.pth.tar", data_path="$DATA_PATH", split="test")
+
 
 
 
