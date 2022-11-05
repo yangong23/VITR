@@ -44,17 +44,27 @@ cd CLIP
 python3 setup.py install
 
 ### train CLIP
+
 #### RN101
+
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME$ --logger_name runs/log --model_name runs/model --model RN101
+
 #### ViT-B/16 or ViT-L/14
+
 python train.py --data_path $DATA_PATH --dataset $DATA_NAME$ --logger_name runs/log --model_name runs/model --model ViT-B/16 or ViT-L/14
 
 ### evaluate CLIP, and extract data features for the use of CLIP-RR
+
 #### RN101
+
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME$ --model RN101
+
 python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME$ --model RN101
+
 #### ViT-B/16 or ViT-L/14
+
 python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATA_NAME$ --model ViT-B/16 or ViT-L/14
+
 python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATA_NAME$ --model ViT-B/16 or ViT-L/14
 
 
