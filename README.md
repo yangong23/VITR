@@ -36,7 +36,19 @@ python3 setup.py install
 ```
 
 ## Datasets
-Please download RefCOCOg images from [here](https://cocodataset.org/#download) or [here](http://images.cocodataset.org/zips/train2014.zip) (2014 MS-COCO images), CLEVR v1.0 images from [here](https://cs.stanford.edu/people/jcjohns/clevr/), and Flikr30K images from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset), then copy images to following paths.
+1 Please download images:
+
+RefCOCOg images are from [here](https://cocodataset.org/#download) (2014 MS-COCO images), or
+```
+wget -c http://images.cocodataset.org/zips/train2014.zip
+wget -c http://images.cocodataset.org/zips/val2014.zip
+```
+
+CLEVR v1.0 images are from [here](https://cs.stanford.edu/people/jcjohns/clevr/)
+
+Flikr30K images are from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)
+
+2 Please copy the downloaded images to following paths.
 
 RefCOCOg: path/datasets/RefCOCOg/precomp/images/train2014 and val2014
 
