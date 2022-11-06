@@ -44,6 +44,7 @@ RefCOCOg images (2014 MS-COCO images) are from [here](https://cocodataset.org/#d
 ```
 wget -c http://images.cocodataset.org/zips/train2014.zip
 wget -c http://images.cocodataset.org/zips/val2014.zip
+wget -c http://images.cocodataset.org/zips/test2014.zip
 ```
 
 CLEVR v1.0 images are from [here](https://cs.stanford.edu/people/jcjohns/clevr/)
@@ -59,6 +60,7 @@ datasets
 │   │      ├── images
 │   │      │    ├── train2014
 │   │      │    ├── val2014
+│   │      │    ├── test2014
 ├──CLEVR
 │   ├── precomp
 │   │      ├── ......
