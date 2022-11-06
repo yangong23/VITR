@@ -97,7 +97,7 @@ $DATASET_NAME is: one of RefCOCOg, CLEVR, and F30K
 
 ### Evaluate CLIP, and extract the precomp features for the use of CLIP-RR
 
-RN101 is required, please use one of ViT-B/16 and ViT-L/14.
+RN101 is required, and please use one of ViT-B/16 and ViT-L/14.
 
 RN101
 ```
