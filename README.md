@@ -19,6 +19,8 @@ We recommended the following dependencies.
 
 * [pycocotools](https://github.com/cocodataset/cocoapi) 
 
+* pip install transformers
+
 * pip install ftfy regex tqdm
 
 * Punkt Sentence Tokenizer:
@@ -49,6 +51,14 @@ CLEVR v1.0 images are from [here](https://cs.stanford.edu/people/jcjohns/clevr/)
 Flikr30K images are from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)
 
 ### 2 Please copy the downloaded images to the following paths.
+
+datasets
+├──RefCOCOg
+│   ├── precomp
+│   │      ├── ......
+│   │      ├── images
+│   │      │    ├── train2014
+│   │      │    ├── val2014
 
 RefCOCOg: $PATH/datasets/RefCOCOg/precomp/images/train2014 and val2014
 
