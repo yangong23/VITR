@@ -51,7 +51,7 @@ CLEVR v1.0 images are from [here](https://cs.stanford.edu/people/jcjohns/clevr/)
 
 Flikr30K images are from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)
 
-### 2 Please copy the downloaded images to the following paths.
+### 2 Please copy the downloaded images to the folder 'datasets' as follows.
 ```
 datasets
 ├──RefCOCOg
