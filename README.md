@@ -29,7 +29,7 @@ nltk.download()
 > d punkt
 ``` 
 
-* install CLIP (please use CLIP in this repository):
+* Install CLIP (please use CLIP in this repository):
 ``` 
 cd CLIP
 python3 setup.py install
