@@ -57,7 +57,9 @@ CLEVR: $PATH/datasets/CLEVR/precomp/images/train, val, and test
 F30K: $PATH/datasets/RefCOCOg/precomp/images
 
 ## CLIP
-
+```
+cd CLIP
+```
 ### Train
 
 RN101
@@ -94,7 +96,9 @@ python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATASET_NAME --
 Once finised, please go to the folder 'CLIP/features', and copy all files into datasets/$DATASET_NAME/precomp
 
 ## CLIP-RR
-
+```
+cd CLIP-RR
+```
 ### Train
 
 B16
