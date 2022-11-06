@@ -53,7 +53,9 @@ Flikr30K images are from [here](https://www.kaggle.com/datasets/hsankesara/flick
 ### 2 Please copy the downloaded images to the following paths.
 
 datasets
+
 ├──RefCOCOg
+
 │   ├── precomp
 │   │      ├── ......
 │   │      ├── images
