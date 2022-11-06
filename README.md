@@ -59,13 +59,18 @@ datasets
 │   │      ├── images
 │   │      │    ├── train2014
 │   │      │    ├── val2014
+├──CLEVR
+│   ├── precomp
+│   │      ├── ......
+│   │      ├── images
+│   │      │    ├── train
+│   │      │    ├── val
+│   │      │    ├── test
+├──F30K
+│   ├── precomp
+│   │      ├── ......
+│   │      ├── images
 ```
-
-RefCOCOg: $PATH/datasets/RefCOCOg/precomp/images/train2014 and val2014
-
-CLEVR: $PATH/datasets/CLEVR/precomp/images/train, val, and test
-
-F30K: $PATH/datasets/RefCOCOg/precomp/images
 
 ## CLIP
 ```
