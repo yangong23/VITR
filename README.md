@@ -55,23 +55,23 @@ Flikr30K images are from [here](https://www.kaggle.com/datasets/hsankesara/flick
 ```
 datasets
 ├──RefCOCOg
-│   ├── precomp
-│   │      ├── ......
-│   │      ├── images
-│   │      │    ├── train2014
-│   │      │    ├── val2014
-│   │      │    ├── test2014
+│  ├── precomp
+│  │   ├── ......
+│  │   ├── images
+│  │   │   ├── train2014
+│  │   │   ├── val2014
+│  │   │   ├── test2014
 ├──CLEVR
-│   ├── precomp
-│   │      ├── ......
-│   │      ├── images
-│   │      │    ├── train
-│   │      │    ├── val
-│   │      │    ├── test
+│  ├── precomp
+│  │   ├── ......
+│  │   ├── images
+│  │   │   ├── train
+│  │   │   ├── val
+│  │   │   ├── test
 ├──F30K
-│   ├── precomp
-│   │      ├── ......
-│   │      ├── images
+│  ├── precomp
+│  │   ├── ......
+│  │   ├── images
 ```
 
 ## CLIP
