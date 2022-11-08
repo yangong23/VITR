@@ -2,7 +2,7 @@
 This is the implementation of CLIP-RR.
 
 ## Requirements and installation
-We recommended the following dependencies.
+We recommend the following dependencies.
 * ubuntu (>=18.04)
 
 * Python 3.8
