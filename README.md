@@ -95,7 +95,7 @@ $DATA_PATH is: $PATH/datasets
 
 $DATASET_NAME is: one of RefCOCOg, CLEVR, and F30K
 
-### Evaluate CLIP, and extract the precomp features for the use of CLIP-RR
+### Evaluate CLIP, and extract the precomp features for the use of VITR
 
 RN101 is required, and please use one of ViT-B/16 and ViT-L/14.
 
@@ -113,9 +113,9 @@ python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATASET_NAME --
 ```
 Once finised, please go to the folder 'CLIP/features', and copy all files into datasets/$DATASET_NAME/precomp
 
-## CLIP-RR
+## VITR
 ```
-cd CLIP-RR
+cd VITR
 ```
 ### Train
 
