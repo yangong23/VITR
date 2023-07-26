@@ -1,4 +1,4 @@
-# CLIP-RR
+# VITR
 This is the implementation of CLIP-RR.
 
 ## Requirements and installation
