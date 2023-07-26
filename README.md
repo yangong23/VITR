@@ -1,5 +1,5 @@
 # VITR
-This is the implementation of CLIP-RR.
+This is the implementation of VITR.
 
 ## Requirements and installation
 We recommend the following dependencies.
