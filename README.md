@@ -9,7 +9,6 @@ datasets
 ├──RefCOCOg
 │  ├── precomp
 │  │   ├── ......
-```
 
 ## Requirements and installation
 We recommend the following dependencies.
