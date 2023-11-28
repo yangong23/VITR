@@ -1,6 +1,17 @@
 # VITR
 This is the implementation of VITR.
 
+## Datasets
+### 1 Please download images:
+
+Please download the dataset from [here](https://cocodataset.org/#download).
+
+datasets
+├──RefCOCOg
+│  ├── precomp
+│  │   ├── ......
+```
+
 ## Requirements and installation
 We recommend the following dependencies.
 * ubuntu (>=18.04)
@@ -30,28 +41,6 @@ import nltk
 nltk.download()
 > d punkt
 ``` 
-
-## Datasets
-### 1 Please download images:
-
-RefCOCOg images (2014 MS-COCO images) are from [here](https://cocodataset.org/#download) or
-```
-wget -c http://images.cocodataset.org/zips/train2014.zip
-wget -c http://images.cocodataset.org/zips/val2014.zip
-wget -c http://images.cocodataset.org/zips/test2014.zip
-```
-
-### 2 Please copy the downloaded images to the folder 'datasets' as follows.
-```
-datasets
-├──RefCOCOg
-│  ├── precomp
-│  │   ├── ......
-│  │   ├── images
-│  │   │   ├── train2014
-│  │   │   ├── val2014
-│  │   │   ├── test2014
-```
 
 ## VITR
 ```
