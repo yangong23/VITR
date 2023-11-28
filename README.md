@@ -31,12 +31,6 @@ nltk.download()
 > d punkt
 ``` 
 
-* Install CLIP (please use CLIP in this repository):
-``` 
-cd CLIP
-python3 setup.py install
-```
-
 ## Datasets
 ### 1 Please download images:
 
@@ -46,10 +40,6 @@ wget -c http://images.cocodataset.org/zips/train2014.zip
 wget -c http://images.cocodataset.org/zips/val2014.zip
 wget -c http://images.cocodataset.org/zips/test2014.zip
 ```
-
-CLEVR v1.0 images are from [here](https://cs.stanford.edu/people/jcjohns/clevr/)
-
-Flikr30K images are from [here](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)
 
 ### 2 Please copy the downloaded images to the folder 'datasets' as follows.
 ```
@@ -61,57 +51,7 @@ datasets
 │  │   │   ├── train2014
 │  │   │   ├── val2014
 │  │   │   ├── test2014
-├──CLEVR
-│  ├── precomp
-│  │   ├── ......
-│  │   ├── images
-│  │   │   ├── train
-│  │   │   ├── val
-│  │   │   ├── test
-├──F30K
-│  ├── precomp
-│  │   ├── ......
-│  │   ├── images
 ```
-
-## CLIP
-```
-cd CLIP
-```
-### Train
-
-RN101
-```
-python train.py --data_path $DATA_PATH --dataset $DATA_NAME --model RN101
-```
-ViT-B/16 or ViT-L/14
-```
-python train.py --data_path $DATA_PATH --dataset $DATA_NAME --model ViT-B/16 or ViT-L/14
-```
-
-Please notice: 
-
-$DATA_PATH is: $PATH/datasets
-
-$DATASET_NAME is: one of RefCOCOg, CLEVR, and F30K
-
-### Evaluate CLIP, and extract the precomp features for the use of VITR
-
-RN101 is required, and please use one of ViT-B/16 and ViT-L/14.
-
-RN101
-```
-python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATASET_NAME --model RN101
-```
-
-ViT-B/16 or ViT-L/14
-```
-python extractFeaturesImages.py --data_path $DATA_PATH --dataset $DATASET_NAME --model ViT-B/16 or ViT-L/14
-```
-```
-python extractFeaturesTexts.py --data_path $DATA_PATH --dataset $DATASET_NAME --model ViT-B/16 or ViT-L/14
-```
-Once finised, please go to the folder 'CLIP/features', and copy all files into datasets/$DATASET_NAME/precomp
 
 ## VITR
 ```
@@ -119,18 +59,12 @@ cd VITR
 ```
 ### Train
 
-B16
-```
-python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --bert_size 512 --embed_size 1024
-```
-L14
 ```
 python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --bert_size 768 --embed_size 2048
 ```
 
 ### Evaluation
 
-B16 or L14
 ```
 evaluation.evalrank("./runs/$DATASET_NAME/model/model_best.pth.tar", data_path="$DATA_PATH", split="test")
 ```
