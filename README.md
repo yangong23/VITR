@@ -2,7 +2,7 @@
 This is the implementation of VITR.
 
 ## Datasets
-### 1 Please download images:
+### Please download images:
 
 Please download the dataset from [here](https://cocodataset.org/#download).
 
