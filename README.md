@@ -48,3 +48,12 @@ evaluation.evalrank("./runs/$DATASET_NAME/model/model_best.pth.tar", data_path="
 ```
 python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model
 ```
+# Citation
+If you find this code useful for your research, please consider citing:
+``` 
+@article{gong2023vitr,
+  title={VITR: Augmenting Vision Transformers with Relation-Focused Learning for Cross-Modal Information Retrieval},
+  author={Gong, Yan and Cosma, Georgina},
+  year={2024}
+}
+``` 
