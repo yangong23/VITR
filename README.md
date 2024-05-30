@@ -53,7 +53,7 @@ If you find this code useful for your research, please consider citing:
 ``` 
 @article{gong2023vitr,
   title={VITR: Augmenting Vision Transformers with Relation-Focused Learning for Cross-Modal Information Retrieval},
-  author={Gong, Yan and Cosma, Georgina and Axel Finke},
+  author={Gong, Yan and Cosma, Georgina and Axel, Finke},
   year={2024}
 }
 ``` 
