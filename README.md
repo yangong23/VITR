@@ -38,14 +38,13 @@ nltk.download()
 ```
 cd VITR
 ```
-### Train
-
-```
-python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model --bert_size 768 --embed_size 2048
-```
-
 ### Evaluation
 
 ```
 evaluation.evalrank("./runs/$DATASET_NAME/model/model_best.pth.tar", data_path="$DATA_PATH", split="test")
+```
+### Train
+
+```
+python train.py --data_path $DATA_PATH --dataset $DATASET_NAME --logger_name runs/$DATASET_NAME/log --model_name runs/$DATASET_NAME/model
 ```
