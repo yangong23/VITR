@@ -31,8 +31,8 @@ nltk.download()
 > d punkt
 ```
 
-## Datasets
-Please download the dataset from [here](https://drive.google.com/drive/folders/1_noi3665dify3VFVf7GuZCk5ZKdPp0X8?usp=drive_link).
+## Datasets and Models
+Please download the dataset and models from [here](https://drive.google.com/drive/folders/1_noi3665dify3VFVf7GuZCk5ZKdPp0X8?usp=drive_link).
 
 ### Evaluation
 
