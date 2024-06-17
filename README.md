@@ -1,9 +1,6 @@
 # VITR
 This is the implementation of VITR.
 
-## Datasets
-Please download the dataset from [here](https://cocodataset.org/#download).
-
 ## Requirements and installation
 We recommend the following dependencies.
 * ubuntu (>=18.04)
@@ -32,12 +29,11 @@ We recommend the following dependencies.
 import nltk
 nltk.download()
 > d punkt
-``` 
+```
 
-## VITR
-```
-cd VITR
-```
+## Datasets
+Please download the dataset from [here](https://drive.google.com/drive/folders/1_noi3665dify3VFVf7GuZCk5ZKdPp0X8?usp=drive_link).
+
 ### Evaluation
 
 ```
