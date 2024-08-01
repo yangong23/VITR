@@ -1,5 +1,5 @@
 # VITR
-This is the implementation of VITR.
+This is the PyTorch code for implementing Vision Transformers with Relation-Focused Learning (VITR).
 
 ## Requirements and installation
 We recommend the following dependencies.
